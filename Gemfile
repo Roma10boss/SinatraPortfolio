@@ -6,9 +6,21 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
 # gem "rails"
 gem 'sinatra'
-gem 'sqlite3'
-gem 'activerecord', :require => "active_record"
+gem 'activerecord', '~>4.2', '>=4.2.6', :require => 'active_record'
+gem 'sinatra-activerecord', :require => 'sinatra/activerecord'
 gem 'rake'
-gem 'pry'
-gem 'sinatra-activerecord'
 gem 'require_all'
+gem 'sqlite3', '~>1.3.6'
+gem 'thin'
+gem 'shotgun'
+gem 'pry'
+gem 'bcrypt'
+gem 'tux'
+gem 'pry-nav'
+gem 'json'
+
+group :test do
+  gem 'rspec'
+  gem 'capybara'
+  gem 'rack-test'
+end
