@@ -4,7 +4,7 @@ source "https://rubygems.org"
 
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
-# gem "rails"
+gem "rails"
 gem 'sinatra'
 gem 'activerecord', '~>4.2', '>=4.2.6', :require => 'active_record'
 gem 'sinatra-activerecord', :require => 'sinatra/activerecord'
@@ -18,6 +18,7 @@ gem 'bcrypt'
 gem 'tux'
 gem 'pry-nav'
 gem 'json'
+
 
 group :test do
   gem 'rspec'

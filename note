@@ -30,3 +30,9 @@ Order controller and views
   render update form and instance
   update instance
   deletes instance
+
+Procedure
+  set up classes
+  set up my database
+  users controller
+  the order
