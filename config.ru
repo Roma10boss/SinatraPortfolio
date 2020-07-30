@@ -8,5 +8,8 @@ end
 
 
   use Rack::MethodOverride
+  use PostController
+  use UsersController
+  use SessionsController
 
   run ApplicationController
