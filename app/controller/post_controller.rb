@@ -3,6 +3,7 @@ class PostController < ApplicatioController
   get '/posts' do
     "Logged in as #{session[:email]}"
   end
+
 #verify if you are login
   get '/posts/new'
   if session[:email].empty?
